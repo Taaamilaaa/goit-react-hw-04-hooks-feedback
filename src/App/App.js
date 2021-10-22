@@ -13,23 +13,44 @@ const App = () => {
   const options = ['Good', 'Neutral', 'Bad'];
 
   const feedbackChoice = (e) => {
-    console.log(e.target.textContent);
-    switch (e.target.textContent) {
-      case 'good':
-        setGood(prevState => prevState + 1)
-        break;
-      case 'neutral':
-        setNeutral(prevState => prevState + 1)
-        break;
-      case 'bad':
-        setBad(prevState => prevState + 1)
-        break;
-      default:
-        return;
+   
+    if (e.target.textContent === 'good') {
+      console.log('good');
+        setGood(state => state + 1)
     };
+    if (e.target.textContent === 'neutral') {
+      console.log('neutral');
+        setNeutral(state => state + 1)
+    };
+    if (e.target.textContent === 'bad') {
+      console.log('bad');
+        setBad(state => state + 1)
+    };
+    // switch (e.target.textContent) {
+    //   case 'good':
+    //     console.log('good');
+    //     setGood(state => state + 1)
+    //     break;
+    //   case 'neutral':
+    //     console.log('neutral');
+    //     setNeutral(state => state + 1)
+    //     break;
+    //   case 'bad':
+    //     console.log('bad');
+    //     setBad(state => state + 1)
+    //     break;
+    //   default:
+    //     return;
+    // };
   };
-  const countTotal = () => good + neutral + bad;
-  const countPositiveFeedbackPercentage = () => Math.round((100 * good / countTotal()));
+  const countTotal = () => {
+    console.log('countTotal');
+    return good + neutral + bad;
+  }
+  const countPositiveFeedbackPercentage = () => {
+    console.log("percentage");
+    return Math.round((100 * good / countTotal()));
+  }
 
   return (
     <section className={styles.container}>
