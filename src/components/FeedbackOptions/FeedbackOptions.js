@@ -2,7 +2,7 @@ import PropTypes from "prop-types"; // ES6
 
 import styles from "./feedbackOptions.module.css";
 
-export function FeedbackOptions({ options, onLeaveFeedback }) {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ul className={styles.feedbackList}>
       {options.map((option) => {
@@ -12,7 +12,7 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
               className={styles.button}
               key={option}
               type="button"
-              onClick={() => onLeaveFeedback(option)}
+              onClick={(e) => onLeaveFeedback(e)}
             >
               {option}
             </button>
