@@ -1,0 +1,25 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background: url(../images/bgImage.jpg) 50% 50% no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
+.feedback {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+
+  width: 700px;
+  height: 600px;
+  border-radius: 25%;
+  background-color: rgba(219, 206, 206, 0.329);
+}

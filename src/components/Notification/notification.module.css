@@ -1,0 +1,11 @@
+.notification {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 61px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  color: rgba(22, 15, 2, 0.726);
+}

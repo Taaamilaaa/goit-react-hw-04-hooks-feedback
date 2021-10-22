@@ -1,0 +1,21 @@
+.statisticsList {
+  width: 350px;
+  height: 150px;
+  padding: 20px;
+  background-color: rgba(58, 52, 52, 0.534);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 45px;
+}
+.statisticItem {
+  padding-bottom: 15px;
+}
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  margin-left: 15px;
+
+  color: cornsilk;
+}

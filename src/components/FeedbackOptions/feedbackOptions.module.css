@@ -1,0 +1,44 @@
+.feedbackList {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 61px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(26, 17, 5);
+
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(
+    0deg,
+    rgb(54, 36, 10) 0%,
+    rgb(156, 123, 109) 100%
+  );
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  color: cornsilk;
+
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(27, 24, 22, 0.507);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(27, 24, 22, 0.452);
+  box-shadow: 4px 4px 8px 0px rgba(27, 24, 22, 0.609);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 123, 109, 0.5) 0%,
+    rgba(54, 36, 10, 0.445) 100%
+  );
+}
