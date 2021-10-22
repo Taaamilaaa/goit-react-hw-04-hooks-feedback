@@ -13,44 +13,27 @@ const App = () => {
   const options = ['Good', 'Neutral', 'Bad'];
 
   const feedbackChoice = (e) => {
-   
-    if (e.target.textContent === 'good') {
-      console.log('good');
+ 
+    switch (e.target.textContent) {
+      case 'Good':        
         setGood(state => state + 1)
-    };
-    if (e.target.textContent === 'neutral') {
-      console.log('neutral');
+        break;
+      case 'Neutral':        
         setNeutral(state => state + 1)
-    };
-    if (e.target.textContent === 'bad') {
-      console.log('bad');
+        break;
+      case 'Bad':        
         setBad(state => state + 1)
+        break;
+      default:
+        return;
     };
-    // switch (e.target.textContent) {
-    //   case 'good':
-    //     console.log('good');
-    //     setGood(state => state + 1)
-    //     break;
-    //   case 'neutral':
-    //     console.log('neutral');
-    //     setNeutral(state => state + 1)
-    //     break;
-    //   case 'bad':
-    //     console.log('bad');
-    //     setBad(state => state + 1)
-    //     break;
-    //   default:
-    //     return;
-    // };
   };
-  const countTotal = () => {
-    console.log('countTotal');
+  const countTotal = () => {   
     return good + neutral + bad;
   }
   const countPositiveFeedbackPercentage = () => {
-    console.log("percentage");
-    return Math.round((100 * good / countTotal()));
-  }
+     return Math.round((100 * good / countTotal()));
+   }
 
   return (
     <section className={styles.container}>
